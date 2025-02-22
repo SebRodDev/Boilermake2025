@@ -1,0 +1,15 @@
+  Working on parsing the data from the syllabus pdf and then
+        - step 1 -  parse the data from the course syllabus.
+                 -  create properties to analyze each class off of which is added in the system.
+                 -  then analyze the data based on each class' structure - use AI to understand the grade scheme
+
+
+                 Main Classification should include
+                  - After a 10-week period
+                    - Grades : calculate the total sum grades after a 10 week period which students grades will be
+                               calulated out of.
+                    - average submission lateness or something to quantify how late student submitted the assignments
+                    - what is the average of the class and work with grading scheme
+
+
+- THINGS TO ACHIEVE :)

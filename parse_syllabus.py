@@ -180,3 +180,4 @@ print(course)
 generator = StudentDataGenerator(course)
 student_data = generator.generate_student_data(num_students=50)
 print(student_data.head())
+    
