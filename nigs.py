@@ -163,7 +163,7 @@ class SyllabusGPTAnalyzer:
 
 # Main execution
 if __name__ == "__main__":
-    analyzer = SyllabusGPTAnalyzer("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")
+    analyzer = SyllabusGPTAnalyzer("apaiapiapiapapaia")
     grades = {
         "Individual Homework": [95, 87, 92, 88, 90],
         "Individual Quizzes": [88, 92, 85, 90],
