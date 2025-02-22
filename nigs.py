@@ -83,7 +83,7 @@ async def main():
     print(json.dumps(extracted_info, indent=2))
 
 if __name__ == "__main__":
-    openai.api_key = "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"  # Replace with your actual API key
+    openai.api_key = "-"  # Replace with your actual API key
     asyncio.run(main())
     
     # make an assitant
