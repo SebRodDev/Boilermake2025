@@ -7,6 +7,7 @@ from sklearn.metrics import mean_squared_error, accuracy_score, classification_r
 import matplotlib.pyplot as plt
 from sklearn.pipeline import Pipeline
 
+
 class CourseDataGenerator:
     def __init__(self, seed=42):
         """Initialize the data generator with course-specific parameters."""
