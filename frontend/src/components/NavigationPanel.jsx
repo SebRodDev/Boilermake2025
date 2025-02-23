@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Styles/NavigationPanelStyles.css';
+import '../styles/NavigationPanelStyles.css';
 
 export default function NavigationPanel({ onUserClick, selectedUser }) {
     const [users, setUsers] = useState([]);
@@ -10,27 +10,27 @@ export default function NavigationPanel({ onUserClick, selectedUser }) {
     useEffect(() => {
         axios.get('http://127.0.0.1:5000/api/student-grades')
             .then(response => {
-                console.log('Data fetched:', response.data); // Debugging statement
+                console.log('Data fetched:', response.data);
                 setUsers(response.data);
-                console.log('Users state set:', response.data); // Debugging statement
+                console.log('Users state set:', response.data);
             })
             .catch(error => {
                 console.error('There was an error fetching the student grades!', error);
             });
     }, []);
 
-    console.log('Users:', users); // Debugging statement
+    console.log('Users:', users);
 
     const filteredUsers = Array.isArray(users) ? users.filter(user => {
-        console.log('User:', user); // Debugging statement
+        console.log('User:', user);
         const matchesSearchTerm = user.name && user.name.toLowerCase().includes(searchTerm.toLowerCase());
         const matchesFilter = filter === 'all' || user.dotColor === filter;
-        console.log('matchesSearchTerm:', matchesSearchTerm); // Debugging statement
-        console.log('matchesFilter:', matchesFilter); // Debugging statement
+        console.log('matchesSearchTerm:', matchesSearchTerm);
+        console.log('matchesFilter:', matchesFilter);
         return matchesSearchTerm && matchesFilter;
     }) : [];
 
-    console.log('Filtered users:', filteredUsers); // Debugging statement
+    console.log('Filtered users:', filteredUsers);
 
     return (
         <div className="navigationPanel">
