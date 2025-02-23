@@ -1,0 +1,63 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 30px;
+    /* Increased padding */
+    border-radius: 5px;
+    width: 500px;
+    /* Increased width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modalContent h2 {
+    margin-top: 0;
+}
+
+.modalContent textarea,
+.modalContent input[type="text"],
+.modalContent input[type="date"],
+.modalContent input[type="time"] {
+    width: 95%;
+    /* Adjusted width to fit the new modal size */
+    margin-bottom: 15px;
+    /* Increased margin-bottom */
+    padding: 15px;
+    /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalActions button {
+    margin-left: 15px;
+    /* Increased margin-left */
+    padding: 10px 15px;
+    /* Increased padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modalActions button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.modalActions button:last-child {
+    background-color: #ccc;
+}

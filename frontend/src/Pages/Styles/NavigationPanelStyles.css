@@ -1,0 +1,89 @@
+.navigationPanel {
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid #dee2e6;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.searchBar {
+    width: 92%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filterSelect {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.userList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.userList li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+}
+
+.userList li:hover {
+    background-color: #e9ecef;
+}
+
+.userList li.active {
+    background-color: #e9ecef;
+}
+
+.completeProfile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profilePictures {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.usernamePart {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+.userSubText {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.subheadings {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
