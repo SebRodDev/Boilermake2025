@@ -65,14 +65,21 @@ export default function Dashboard() {
                             </div>
                         </div>
 
-                        <div className="failedStatus">
-                            <h3 className="smallHeading">Passing Progress</h3>
-                            {selectedUser.dotColor === 'red' && (
-                                <p className="atRiskText">Student is at risk</p>
-                            )}
-                            {selectedUser.dotColor === 'green' && (
-                                <p className="passingText">Student is passing</p>
-                            )}
+                        <div className="wrapper">
+                            <div className="failedStatus">
+                                <h3 className="smallHeading">Passing Progress</h3>
+                                {selectedUser.dotColor === 'red' && (
+                                    <p className="atRiskText">Student is at risk</p>
+                                )}
+                                {selectedUser.dotColor === 'green' && (
+                                    <p className="passingText">Student is passing</p>
+                                )}
+
+                            </div>
+                            <div className="failedProbability">
+                                <h3 className="smallHeading">Probability of Failing</h3>
+                                <p className="failureText">%{selectedUser.failure_prob?.toFixed(2)}</p>
+                            </div>
                         </div>
                     </div>
                 )}

@@ -1,6 +1,7 @@
 .dashboard {
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
+    background-color: #1c1b1dff;
 }
 
 .content {
@@ -14,8 +15,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    background-color: white;
-    border-bottom: 1px solid #dee2e6;
+    background-color: #1c1b1dff;
+    border-bottom: 2px solid #282a2cff;
     width: 100%;
     height: 15px;
 }
@@ -56,6 +57,7 @@
     font-size: 20px;
     font-weight: bold;
     margin-left: 30px;
+    color: white;
 }
 
 .userDetails {
@@ -65,25 +67,26 @@
 }
 
 .userDetailBox {
-    border: 1px solid #d0d3d7;
+    border: none;
     padding: 10px;
-    background-color: white;
+    background-color: #282a2cff;
     width: 29%;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(40, 42, 44, 0.1);
     margin-right: 15px;
 }
 
 .userDetailsBox {
-    border: 1px solid #d0d3d7;
+    border: none;
     padding: 20px;
-    background-color: white;
+    background-color: #282a2cff;
     border-radius: 5px;
     width: 29%;
+    color: white;
     display: flex;
     margin-left: 20px;
     margin-right: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(40, 42, 44, 0.2);
 }
 
 .userProfilePicture {
@@ -98,6 +101,7 @@
     margin-bottom: 10px;
     padding-left: 10px;
     font-weight: semi-bold;
+    color: white;
 }
 
 .largerText {
@@ -105,6 +109,7 @@
     padding-left: 10px;
     font-weight: bold;
     margin-top: 10px;
+    color: white;
 }
 
 .smallerText {
@@ -120,9 +125,9 @@
 }
 
 .graph {
-    border: 1px solid #d0d3d7;
+    border: none;
     padding: 20px;
-    background-color: white;
+    background-color: #282a2cff;
     width: 57%;
     height: 350px;
     margin-top: 20px;
@@ -138,9 +143,9 @@
 }
 
 .currentClasses {
-    border: 1px solid #d0d3d7;
+    border: none;
     padding: 20px;
-    background-color: white;
+    background-color: #282a2cff;
     border-radius: 5px;
     width: 32%;
     display: flex;
@@ -148,6 +153,7 @@
     margin-right: 15px;
     margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .graphImage {
@@ -158,6 +164,12 @@
 .fontSizes {
     font-weight: bold;
     font-size: 25px;
+    background: linear-gradient(45deg, #d66574ff, #5d7fe7ff);
+    /* Apply gradient to background */
+    -webkit-background-clip: text;
+    /* Clip background to text */
+    -webkit-text-fill-color: transparent;
+    /* Set text fill color to transparent */
 }
 
 .otherText {
@@ -175,26 +187,26 @@
 }
 
 .failedStatus {
-    border: 1px solid #d0d3d7;
+    border: none;
     padding: 20px;
     padding-top: 10px;
-    background-color: white;
+    background-color: #282a2cff;
     border-radius: 5px;
-    width: 1120px;
+    width: 680px;
     display: flex;
     margin-left: 22px;
     margin-right: 15px;
     margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(40, 42, 44, 0.1);
     flex-direction: column;
-    height: 100px;
+    height: 85px;
 }
 
 .atRiskText {
     font-size: 60px;
     color: #d90404;
     font-weight: bold;
-    margin-top: -30px;
+    margin-top: -15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -203,7 +215,39 @@
     font-size: 60px;
     color: #1d8d0e;
     font-weight: bold;
-    margin-top: -30px;
+    margin-top: -15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.failedProbability {
+    border: none;
+    padding: 20px;
+    padding-top: 10px;
+    background-color: #282a2cff;
+    border-radius: 5px;
+    width: 380px;
+    height: 100px;
+    display: flex;
+    margin-left: 6px;
+    margin-right: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(40, 42, 44, 0.1);
+    flex-direction: column;
+    height: 85px;
+}
+
+.failureText {
+    font-size: 30px;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #d90404;
 }

@@ -1,26 +1,36 @@
 .navigationPanel {
     width: 250px;
     height: 100vh;
-    background-color: white;
-    border-right: 1px solid #dee2e6;
+    background-color: #282a2cff;
+    border-right: 2px solid #282a2cff;
     padding: 10px;
     box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .searchBar {
     width: 92%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 4px;
+    background-color: rgb(71, 73, 74);
+    color: white;
+    font-weight: bold;
 }
 
 .filterSelect {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 4px;
+    background-color: rgb(71, 73, 74);
+    color: white;
+    font-weight: bold;
 }
 
 .userList {
@@ -32,17 +42,17 @@
 .userList li {
     padding: 10px;
     cursor: pointer;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #1c1b1dff;
     display: flex;
     align-items: center;
 }
 
 .userList li:hover {
-    background-color: #e9ecef;
+    background-color: #1c1b1dff;
 }
 
 .userList li.active {
-    background-color: #e9ecef;
+    background-color: #1c1b1dff;
 }
 
 .completeProfile {
@@ -66,11 +76,12 @@
 
 .userName {
     font-weight: bold;
+    color: white;
 }
 
 .userSubText {
     font-size: 12px;
-    color: #6c757d;
+    color: #a0a7ac;
 }
 
 .dot {

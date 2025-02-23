@@ -51,7 +51,7 @@ export default function EmailModal({ isOpen, onClose, selectedUser }) {
     return (
         <div className="modalOverlay">
             <div className="modalContent">
-                <h2>Add Reminder to Google Calendar to meet with {selectedUser.name}</h2>
+                <h2>Add Reminder to Google Calendar to Meet With {selectedUser.name}</h2>
                 <input
                     type="text"
                     value={eventTitle}
