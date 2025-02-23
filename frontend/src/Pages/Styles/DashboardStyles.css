@@ -1,0 +1,209 @@
+.dashboard {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: white;
+    border-bottom: 1px solid #dee2e6;
+    width: 100%;
+    height: 15px;
+}
+
+.sendEmail {
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 55%;
+    font-size: 12px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.sendEmail:hover {
+    background-color: #dee2e6;
+    color: black;
+}
+
+.sendEmail:active {
+    background-color: #98b2cb;
+    color: black;
+}
+
+.profilePicture {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 12%;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.userDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.userDetailBox {
+    border: 1px solid #d0d3d7;
+    padding: 10px;
+    background-color: white;
+    width: 29%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+}
+
+.userDetailsBox {
+    border: 1px solid #d0d3d7;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: 29%;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userProfilePicture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.smallHeading {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: semi-bold;
+}
+
+.largerText {
+    font-size: 30px;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.smallerText {
+    font-size: 15px;
+    padding-left: 10px;
+    margin-top: -20px;
+    color: #8f9296;
+}
+
+.detailsAndGraph {
+    display: flex;
+    flex-direction: column;
+}
+
+.graph {
+    border: 1px solid #d0d3d7;
+    padding: 20px;
+    background-color: white;
+    width: 57%;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.graphPlusClasses {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.currentClasses {
+    border: 1px solid #d0d3d7;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: 32%;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.graphImage {
+    width: 100%;
+    height: 100%;
+}
+
+.fontSizes {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.otherText {
+    font-size: 15px;
+    color: #8f9296;
+    margin-top: 60px;
+    margin-right: 260px;
+    margin-left: -80px;
+}
+
+.gradeText {
+    font-size: 15px;
+    color: #8f9296;
+    margin-top: 60px;
+}
+
+.failedStatus {
+    border: 1px solid #d0d3d7;
+    padding: 20px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    width: 1120px;
+    display: flex;
+    margin-left: 22px;
+    margin-right: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    height: 100px;
+}
+
+.atRiskText {
+    font-size: 60px;
+    color: #d90404;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.passingText {
+    font-size: 60px;
+    color: #1d8d0e;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
