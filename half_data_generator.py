@@ -130,31 +130,7 @@ def save_to_parquet(df, filename='student_grades.parquet'):
     print(f"Parquet file size: {file_metadata.serialized_size} bytes")
     print(f"Number of row groups: {file_metadata.num_row_groups}")
 
-def save_to_hdf5(df, filename='student_grades.h5'):
-    """
-    Save the generated grades to an HDF5 file
-    
-    HDF5 advantages:
-    - Hierarchical structure
-    - Efficient for large arrays
-    - Built-in compression
-    - Metadata support
-    """
-    # Save to HDF5 format
-    with pd.HDFStore(filename, mode='w') as store:
-        # Save the main DataFrame
-        store.put('grades', df, format='table')
-        
-        # Add metadata
-        store.get_storer('grades').attrs.metadata = {
-            'creation_date': datetime.now().isoformat(),
-            'num_students': df['student_id'].nunique(),
-            'num_courses': df['course_name'].nunique(),
-            'weeks_generated': df['week'].max(),
-            'columns': list(df.columns)
-        }
-    
-    print(f"Data saved to {filename}")
+
 
 def read_from_parquet(filename='student_grades.parquet'):
     """
@@ -162,32 +138,16 @@ def read_from_parquet(filename='student_grades.parquet'):
     """
     return pd.read_parquet(filename)
 
-def read_from_hdf5(filename='student_grades.h5'):
-    """
-    Read data from HDF5 file and return both data and metadata
-    """
-    with pd.HDFStore(filename, mode='r') as store:
-        df = store.get('grades')
-        metadata = store.get_storer('grades').attrs.metadata
-    return df, metadata
 
 # Example usage
 if __name__ == "__main__":
     # Generate grades
-    grades_df = generate_student_grades(num_students=50, current_week=10)
+    grades_df = generate_student_grades(num_students=60, current_week=10)
     
     # Save to both formats
     save_to_parquet(grades_df)
-    save_to_hdf5(grades_df)
     
     # Example of reading back the data
     print("\nReading back from Parquet:")
     parquet_df = read_from_parquet()
     print(parquet_df.head())
-    
-    print("\nReading back from HDF5:")
-    hdf_df, hdf_metadata = read_from_hdf5()
-    print("\nData:")
-    print(hdf_df.head())
-    print("\nMetadata:")
-    print(hdf_metadata)
