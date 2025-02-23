@@ -129,8 +129,7 @@ def interpret_qaoa_result(result, nodes):
     )
     
     # Set your OpenAI API key (replace 'YOUR_API_KEY' with your actual key)
-    openai.api_key = "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"
-    
+    openai.api_key = ""
     response = openai.ChatCompletion.create(
        model="gpt-4o",
        messages=[
